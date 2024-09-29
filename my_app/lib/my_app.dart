@@ -161,13 +161,14 @@ class Myapp extends StatelessWidget {
           ),
 
        
-        floatingActionButton: Padding(padding: EdgeInsets.symmetric(vertical: 40),
+        floatingActionButton: Padding(padding: const EdgeInsets.symmetric(vertical: 40),
          child:  FloatingActionButton(onPressed: () {},
-        child: Icon(Icons.add ,color: Colors.white,),
         backgroundColor: Colors.red,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(50),
-        ),),
+        ),
+        child:  const Icon(Icons.add , color: Colors.white,)
+        ,),
       ),
       );
   }
